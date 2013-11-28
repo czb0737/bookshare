@@ -1,0 +1,197 @@
+/*------------------------- Fonts ------------------------*/
+@font-face {
+	font-family: 'anticregular';
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/glyphicons-halflings-regular.woff') format('woff'),  url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),  url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*------------------------- Layout styles ------------------------*/
+body {
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/bg-body19.jpg);
+	font-size:12px;
+}
+/*------------------------- Header ------------------------*/
+#header 
+{
+	background:url(../images/bg-header.jpg);
+	height:90px;
+}
+#header div.content
+{
+	float: left;
+	width: 804px
+}
+
+#header div.content a.logo>img
+{
+	float: left;
+	margin: 27px auto auto 30px;
+}
+
+#header div.content ul.nav
+{
+	float: left;
+	margin: 23px auto;
+	margin-left: 30px;
+}
+#header div ul.nav>li>a
+{
+	/*color: white;*/
+	color: #787b66;
+	font-size: 18px;
+	background: none;
+}
+
+#header div.content ul.nav>li>a.selected
+{
+	/*background: #1bb5ac;*/
+	color: #1bb5ac;
+}
+#header div ul.nav>li>a:hover
+{
+	color: #1bb5ac;
+}
+
+#header div.join
+{
+	float: right;
+	width: 200px;
+	margin: 27px auto 30px auto;
+}
+
+
+/*------------------------- Body ------------------------*/
+#body {
+	margin:0 auto 97px;
+	min-height:1005px;
+	padding:38px 29px 0;
+	width:902px;
+}
+
+div
+{
+	display: block;
+}
+
+#body div.content
+{
+	width: 800px;
+	height: auto;
+	margin: 60px auto;
+	background:url(../images/ba-content.png);
+}
+
+#body div.content div.bg-top
+{
+	height: 30px;
+}
+
+#body div.content div.bg-top>a>img
+{
+	float: right;
+	margin: 10px;
+}
+
+#body div.content div hr
+{
+	color: black;
+}
+
+#body div.content div span p
+{
+	margin-left: 60px;
+	width: 700px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#body div.content div span p.author
+{
+	margin-left: 80%;
+	width: 156px;
+}
+
+#body div.content div span div
+{
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+#body div.content div span div>input
+{
+	width: 230px;
+}
+
+#body div.content div span div>label
+{
+	width: 24px;
+	height: 24px;
+	margin: 0 auto auto 20px;
+	vertical-align: middle;
+	/*background: url(../images/sad.png) no-repeat;*/
+}
+
+/*#body div.content div span form>label.sad
+{
+	background: url(../images/sad.png) no-repeat;	
+}
+
+#body div.content div span form>label.smile
+{
+	background: url(../images/smile.png) no-repeat;		
+}*/
+
+/*#body div.content div span form>img
+{
+	margin-left: 10px;
+}*/
+
+#body div.content div span.load button
+{
+	margin: 60px auto auto 36%;
+	width: 200px;
+}
+#body div.content div.bg-bottom
+{
+	height: 30px;
+}
+
+/*------------------------- Footer ------------------------*/
+#footer 
+{
+	background:url(../images/bg-header.jpg) repeat;
+	height:66px;
+}
+#footer div {
+	margin:0 auto;
+	padding:0 10px;
+	width:940px;
+}
+#footer div p 
+{
+	color:#787b66;
+	display:block;
+	float:left;
+	margin: 23px 0;
+	height: 18px;
+	font-size: 15px;
+}
+
+#footer div.contact>a>img
+{
+	width: 32px;
+	height: 32px;
+	float: right;
+	margin: 15px;
+}
+
+/*------------------------- form ------------------------*/
+div div.modal-dialog div.modal-content div.modal-body>form>div>p
+{
+	margin: 8px 0 10px;
+	color: #CB26D3;
+}
+

@@ -1,0 +1,14 @@
+    E
+    元素名（div、p）；
+    E#id
+    带Id的元素（div#content、p#intro、span#error）；
+    E.class
+    带class的的元素（div.header、p.error）,id和class可以连着写，div#content.column
+    E>N
+    子元素（div>p、div#footer>p>span）
+    E*N
+    多项元素（ul#nav>li*5>a）
+    E+N
+    多项元素
+    E$*N
+    带序号的元素

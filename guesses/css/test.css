@@ -1,0 +1,25 @@
+body
+{
+	background: url(../images/bg-body2.jpg);
+}
+.form
+{
+	margin: 10% auto;
+}
+.end
+{
+	margin-bottom: 10%; 
+}
+#header
+{
+	margin: 0 auto;
+	position: fixed;
+	height: 5%;
+	width: 100%;
+	background: #333333;
+}
+
+#header ul li
+{
+	color: red;
+}
