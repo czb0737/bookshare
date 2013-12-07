@@ -5,8 +5,11 @@
 	<title>Books</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <script src="JsFuntion.js"></script>
+    <script src="jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -22,8 +25,8 @@
 						<li class="current"><a href="index.html">主页</a></li>
 						<li><a href="swap.html">交换图书</a></li>
 						<li><a href="share.html">好书分享</a></li>
-						<li><a href="give.html">赠书</a></li>
-						<li><a href="borrow.html">借书</a></li>
+						<!-- <li><a href="give.html">赠书</a></li> -->
+						<!-- <li><a href="borrow.html">借书</a></li> -->
 						<li><a href="search.html">搜索</a></li>
 						<li><a href="me.html" onclick="">Me</a></li>
 					</ul>
@@ -35,14 +38,26 @@
 
 	<div id="content">
 		<div id="section">
-			<div>
+			<div style="display:none;">
 				<h1 style="text-align:center;">Books!</h1><br/>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小编很高兴大家能来到这个小站,Books中的s是多的意思也是service的意思,即我们的小站是一个提供图书服务的平台,我们希望大家可以在这找到彼此需要的图书,亦或是找到彼此兴趣相同的书友,在步履匆忙的时光里,我们也希望各位朋友内心疲倦的时候,可以在这里找到一点点的欣喜. <br/><br/></p>
 				<span>
-					<!--<a class="first" href="index.html">随便看看</a>-->
 					<a class="first theme-login" onclick="Login()" href="javascript:;">登陆</a>
 
 					<a href="register.html">注册</a>
+				</span>
+			</div>
+			<div>
+				<h1 style="text-align:center;">Books!</h1>
+				<br/>			
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎加入我们的大家庭哦,现在可以上架自己的书籍或者是看看有什么自己想要的书籍然后请求交换哦.同时可以发布分享自己喜欢的书籍给其他人.
+					<br/>			
+					<br/>			
+				</p>
+				<span class="logined">
+					<a href="swap.html">看看有什么</a>
+					<a class="first"data-toggle="modal" data-target="#uploadbooks">上架图书</a>
 				</span>
 			</div>
 			<div id="figure">
@@ -114,5 +129,56 @@
 		</form>
 	</div>
 	<div class="theme-popover-mask"></div>
+	<div class="modal fade" id="uploadbooks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" style="margin:1% auto">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">上架图书</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" role="form" action="" method="post" >
+						<div class="form-group">
+							<label class="col-sm-2 control-label">书名</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" placeholder="书名" name="name"></div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">作者</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" placeholder="作者" name="author"></div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">出版社</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" placeholder="出版社" name="chubanshe"></div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">图书类别</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" placeholder="图书类别" name="kind"></div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">出版时间</label>
+							<div class="col-sm-6">
+								<input type="date" class="form-control" name="time"></div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">上传截图</label>
+							<div class="col-sm-6">
+								<input type="file" class="" name="file" style="margin-top: 8px;width: 149px;">
+							</div>
+						</div>
+						<textarea id="wordid" class="form-control" rows="3" name="word" style="margin: 30px;width:90%;" placeholder="个人评语" ></textarea>
+						<input type="submit" id="forupload" class="btn btn-primary" style="display:none;">
+					</form>
+				</div>
+				<div class="modal-footer" style="margin-top: 0;">
+					<label for="forupload" class="btn btn-primary">上架</label>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

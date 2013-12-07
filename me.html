@@ -4,6 +4,7 @@
 	<meta charset="UTF-8" />
 	<title>Books</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="JsFuntion.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -14,34 +15,170 @@
 			<div id="navigation">
 				<div>		
 					<ul>
-						<li class="current"><a href="index.html">主页</a></li>
+						<li><a href="index.html">主页</a></li>
 						<li><a href="swap.html">交换图书</a></li>
 						<li><a href="share.html">好书分享</a></li>
-						<li><a href="give.html">赠书</a></li>
-						<li><a href="borrow.html">借书</a></li>
+						<!-- <li><a href="give.html">赠书</a></li>
+						<li><a href="borrow.html">借书</a></li> -->
 						<li><a href="search.html">搜索</a></li>
-						<li><a href="me.html" onclick="Login()">Me</a></li>
+						<li class="current"><a href="me.html" onclick="Login()">Me</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="content">
-		<div>
-			<div class="me">
-				<a href="index.html"><img src="images/me.jpg" alt="Image" /></a>
+	<div id="content" style="min-height:850px;" >
+		<div id="section" class="pesonal">
+			<div id="selects">
+				<img src="images/me.jpg" alt="">
+				<div>
+					<h1><a href="">User</a></h1>
+					<h1><a onclick="changemodel(this,'selectsdetaione','selectsdetaitwo')" id="infoone">个人资料</a></h1>
+					<h1><a onclick="changemodel(this,'selectsdetaitwo','selectsdetaione')" id="infotwo">个人书库</a></h1>
+				</div>
 			</div>
-			<br/>
-			<h2><a class="me" href="myinformation.html">个人头像</a></h2>
-			<h2><a class="me" href="myinformation.html">个人资料</a></h2>
-			<h2><a class="me" href="myinformation.html">个人书库</a></h2>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<h2></h2>
+			<div id="selectsdetaione">
+				<form action="#">
+					<table>
+						<tr>
+							<td>
+								<label for="name"> <strong>姓名:</strong>
+								</label>
+							</td>
+							<td>
+								<input type="text" maxlength="30" id="name" name="name"/>			
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="subject"> <strong>邮箱:</strong>
+								</label>
+							</td>
+							<td>
+								<input type="email" maxlength="30" id="subject" name="email"/>			
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="subject"> <strong>密码:</strong>
+								</label>
+							</td>
+							<td>
+								<input type="password" maxlength="30" id="subject" name="passwd"/>			
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="subject"> <strong>专业:</strong>
+								</label>
+							</td>
+							<td>
+								<input type="text" maxlength="30" id="subject" name="majoy"/>			
+							</td>
+							<td>
+								<label for="subject"> <strong>年级:</strong>
+								</label>
+							</td>
+							<td>
+								<input type="text" maxlength="30" id="subject" name="grade"/>			
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td colspan="2">
+								<label class="newsletter" for="newsletter">
+									<span>&nbsp;</span>
+								</label>
+								<!-- <input type="submit" value="修改资料" id="send" />	 -->
+							</td>
+							<td colspan="1">
+								<input type="submit" value="修改资料" id="send" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="selectsdetaitwo">
+				<table class="swap">
+		    		<tr class="swap">
+		    			<td class="swapimg">
+		    				<a href="book.html">
+		    					<img src="images/newBook1.jpg" alt="new"></a>
+		    			</td>
+		    			<td >
+		    				<ul>
+								<li><h2 class="swap">书名</h2></li>
+								<li>作者</li>
+								<li>类别</li>
+								<li>出版社</li>
+						    	<li>出版时间</li>
+						    	<li>请求人数</li>
+							</ul>
+						</td>
+		    		</tr>
+		    		<tr>
+		    			<td></td>
+		    			<td  id="changebtn">
+		    				<span>
+		    					<a>下架此书</a>
+		    					<a>增加数目</a>
+		    				</span>
+		    			</td>
+		    		</tr>
+		    	</table>
+		    	<hr/>
+		    	<table class="swap">
+		    		<tr class="swap">
+		    			<td class="swapimg"><a href="book.html"><img src="images/newBook2.jpg" alt="new"></a></td>
+		    			<td >
+		    				<ul>
+								<li><h2 class="swap">书名</h2></li>
+								<li>作者</li>
+								<li>类别</li>
+								<li>出版社</li>
+						    	<li>出版时间</li>
+						    	<li>请求人数</li>
+							</ul>
+						</td>
+		    		</tr>
+		    		<tr>
+		    			<td></td>
+		    			<td  id="changebtn">
+		    				<span>
+		    					<a>下架此书</a>
+		    					<a>增加数目</a>
+		    				</span>
+		    			</td>
+		    		</tr>
+		    	</table>
+		    	<hr/>
+		    	<table class="swap">
+		    		<tr class="swap">
+		    			<td class="swapimg"><a href="book.html"><img src="images/newBook3.jpg" alt="new"></a></td>
+		    			<td >
+		    				<ul>
+								<li><h2 class="swap">书名</h2></li>
+								<li>作者</li>
+								<li>类别</li>
+								<li>出版社</li>
+						    	<li>出版时间</li>
+						    	<li>增加数目</li>
+							</ul>
+						</td>
+		    		</tr>
+		    		<tr>
+		    			<td></td>
+		    			<td  id="changebtn">
+		    				<span>
+		    					<a>下架此书</a>
+		    					<a>增加数目</a>
+		    				</span>
+		    			</td>
+		    		</tr>
+		    	</table>
+		    	<hr/>
+		    	<p><a >上一页</a><a >下一页</a></p>
+			</div>
 		</div>
 	</div>
 	<div id="footer">

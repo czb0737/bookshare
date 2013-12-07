@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Book-Shared</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div id="logo">
+				<a href="index.html"><img src="images/BookLogo2.png" alt="Logo" /></a>
+			</div>
+			<div id="navigation">
+				<div>		
+					<ul>
+						<li class="current"><a href="index.html">涓婚〉</a></li>
+						<li><a href="swap.html">浜ゆ崲鍥句功</a></li>
+						<li><a href="share.html">濂戒功鍒嗕韩</a></li>
+						<li><a href="give.html">璧犱功</a></li>
+						<li><a href="borrow.html">鍊熶功</a></li>
+						<li><a href="search.html">鎼滅储</a></li>
+						<li><a href="me.html">Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="section">
+			<div>
+				<h1>姝ゅ姛鑳藉皻鍦ㄥ紑鍙戜腑*-_-*</h1>
+			</div>
+		</div>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="first">
+				<h3><a href="index.html">Sharing Books</a></h3>
+			</div>
+			<div class="secon">
+				<h3>Copyright 漏Book Sharing</h3>
+			</div>
+			<div class="third">
+				<h3><a href="contact.html">Contact Us</a></h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
