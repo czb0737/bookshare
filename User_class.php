@@ -1,7 +1,7 @@
 <?php
   class User{
   	private $UserID ;  // pramary key , auto increment
-     private $Username ; // unique,not null
+        private $Username ; // unique,not null
  	private $Password ; // not null
 	private $Email ; // nuique , not null
 	private $Status ;  // int

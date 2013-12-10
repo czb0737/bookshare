@@ -25,9 +25,36 @@
          else 
          {
           return $this->mysqli->insert_id; //成功插入，返回数据ID号
-         }
+         }       
       }
+	  
+	  //添加用户其他信息方法
+	  public function addUser2($user)
+	  {
+	  	 $query = "insert into user2(StudentId,Address,QQ,Phone,Major,Grade,UserPicture)values(?,?,?,?,?,?,?)"; // insert query
+         $stmt = $this->mysqli->prepare($query);  // 预处理
+         $stmt->bind_param('isiisss',$StudentId,$Address,$QQ,$Phone,$Major,$Grade,$UserPicture);// 绑定参数
+		 
+		 $StudentId = null;
+         $Address = null; // 从User_class.php 中取得信息
+         $QQ = null;
+         $Phone = null;
+		 $Major = null;
+		 $Grade = null);
+		 $UserPicture = null;
+		 
+		 $stmt->execute();  //执行插入
 
+         if ($stmt->affected_rows!=1) { // 不成功插入的话
+          # code...
+          $this->printError('insert new user failed :'.$stmt->error); // 执行父类的printError()
+          return false;
+         }
+         else 
+         {
+          return $this->mysqli->insert_id; //成功插入，返回数据ID号
+         }     
+	  }
 
       // 修改用户信息方法 （密码，Email）
       public function changeUserInfo($user)
