@@ -129,7 +129,8 @@ p a
 {
 	background: url(../images/separator-navigation.gif) no-repeat center left;
 	float: left;
-	padding: 0 26px;
+	/*padding: 0 26px;*/
+	padding: 0 41px;
 }
 
 #header div div#navigation div ul li a 
@@ -273,8 +274,10 @@ p a
     width: auto;
 }
 
+
 #content div#section div span a 
 {
+	cursor: pointer;
 	background: url(../images/sprites-buttons.gif) no-repeat 0 -303px;
 	color: #fdfdfb;
 	display: inline-block;
@@ -864,6 +867,112 @@ a.swap
     text-align: center;
     margin-left: 316px; 
 }
+/*-----------------------------------content-pesonal css---------------------------------------------------------------*/
+
+#content div.pesonal
+{
+	background: none !important;
+	height: 1005px !important;
+	width: 84% !important;
+	background: url(../images/bg-navigation.gif) repeat-y;
+
+}
+#content div.pesonal>div#selects
+{
+	background: none;
+	width: 246px;
+	height: 100%;
+}
+#content div.pesonal div#selects>img
+{
+	float: left;
+}
+#content div.pesonal>div#selects>div
+{
+	width: 100% !important;
+	text-align: center;
+}
+#content div.pesonal div#selects>div>h1
+{
+	font-size: 28px;
+	margin-top: 20px;
+}
+#content div.pesonal div#selects>div>h1>a
+{
+	text-decoration: none;
+	color: #80662b;
+	cursor: default;
+}
+#content div.pesonal div#selects>div>h1>a#infoone
+{
+	color: #2e5306;	
+}
+#content div.pesonal div#selects>div>h1>a:hover
+{
+	color: #2e5306;
+}
+#content div.pesonal div#selectsdetaione
+{
+	width: 76%;
+	height: 100%;
+	display: block;
+}
+#content div.pesonal div#selectsdetaione>form>table
+{
+	margin-left: 15%;
+}
+#content div.pesonal div#selectsdetaione>form>table>tbody>tr>td>input#send
+{
+	/*float: right;*/
+	margin-left: 150px;
+}
+#content div.pesonal div#selectsdetaitwo
+{
+	width: 76%;
+	height: 100%;
+	display: none;
+}
+#content div.pesonal div#selectsdetaitwo>table
+{
+	margin-left: 15%;
+}
+#content div.pesonal div#selectsdetaitwo>hr
+{
+	width: 86%;
+	margin-left: 10%;
+}
+#content div.pesonal div#selectsdetaitwo>p
+{
+	width: 100px;
+	margin-left: 76%;
+}
+#content div.pesonal div#selectsdetaitwo>p>a
+{
+	cursor: default;
+}
+#content div.pesonal div#selectsdetaitwo>p>a+a
+{
+	margin-left: 16px;
+}
+#content div.pesonal div#selectsdetaitwo>table>tbody>tr>td#changebtn>span>a
+{
+	cursor: default !important;
+	background: url(../images/sprites-buttons.gif) no-repeat 0 -303px;
+	color: #fdfdfb;
+	display: inline-block;
+	font-family: 'CarterOneRegular';
+	font-size: 16px;
+	height: 38px;
+	line-height: 37px;
+	margin-left: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #216b20;
+	width: 136px;
+	margin-top: 15px;
+}
+
+/*-----------------------------------footer css---------------------------------------------------------------*/
 
 //我改了页脚的高度
 #footer 
@@ -966,6 +1075,10 @@ a.swap
 	margin-left: 44px; 
 	padding-top: 10px;	
 	width: 63px;
+}
+div#uploadbooks>div>div.modal-content
+{
+	background: url(../images/bg-form1.jpg);
 }
 
 /*
