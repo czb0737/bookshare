@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+	session_start();
+	if(isset($_SESSION['views']))
+		$_SESSION['views']=$_SESSION['views']+1;
+	else
+		$_SESSION['views']=1;
+	echo "Veiws=".$_SESSION['views'];
+?>
 <html>
 <head>
 	<meta charset="UTF-8" />
@@ -37,7 +44,7 @@
 		<div id="section">
 			<div>
 				<h1 style="text-align:center;">Books!</h1><br/>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小编很高兴大家能来到这个小站,Books中的s是多的意思也是service的意思,即我们的小站是一个提供图书服务的平台,我们希望大家可以在这找到彼此需要的图书,亦或是找到彼此兴趣相同的书友,在步履匆忙的时光里,我们也希望各位朋友内心疲倦的时候,可以在这里找到一点点的欣喜. <br/><br/></p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello <?php echo $name ?>小编很高兴大家能来到这个小站,Books中的s是多的意思也是service的意思,即我们的小站是一个提供图书服务的平台,我们希望大家可以在这找到彼此需要的图书,亦或是找到彼此兴趣相同的书友,在步履匆忙的时光里,我们也希望各位朋友内心疲倦的时候,可以在这里找到一点点的欣喜. <br/><br/></p>
 				<span>
 					<!--<a class="first" href="index.html">随便看看</a>-->
 					<a class="first theme-login" onclick="Login()" href="javascript:;">登陆</a>
